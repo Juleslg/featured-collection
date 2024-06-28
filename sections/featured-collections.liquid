@@ -10,8 +10,23 @@
       #shopify-section-{{ section.id }} {
         --product-list-items-per-row: {{ section.settings.products_per_row_desktop }};
       }
+
+      #featured-collections-button2 {
+        display: none;
+      }
+
     }
   </style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var elements = document.querySelectorAll('.section-spacing.bordered-section');
+    elements.forEach(function(element) {
+      element.style.marginTop = '0';
+      element.style.paddingTop = '0';
+    });
+  });
+</script>
 
   <div class="section-spacing {% if section.settings.separate_section_with_border %}bordered-section{% endif %}">
     <div class="container">
@@ -82,7 +97,7 @@
               {%- if block.settings.link_text != blank -%}
                 {%- assign button_link = block.settings.link_url | default: block.settings.collection.url | default: '#' -%}
 
-                <div class="justify-self-center">
+                <div id="#featured-collections-button2" class="justify-self-center">
                   {%- render 'button', href: button_link, content: block.settings.link_text -%}
                 </div>
               {%- endif -%}
