@@ -81,6 +81,9 @@
       "block_order": [
         "collection_AXXF8V"
       ],
+      "custom_css": [
+        ".badge--custom {background: white; color: #1c1c1c; padding: 3px 10px;}"
+      ],
       "settings": {
         "separate_section_with_border": true,
         "hide_product_information": false,
