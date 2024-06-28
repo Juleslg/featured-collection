@@ -13,7 +13,7 @@
 
       #featured-collections-button2 {
         display: none;
-        
+
       }
 
     }
@@ -98,7 +98,7 @@
               {%- if block.settings.link_text != blank -%}
                 {%- assign button_link = block.settings.link_url | default: block.settings.collection.url | default: '#' -%}
 
-                <div id="#featured-collections-button2" class="justify-self-center">
+                <div id="featured-collections-button2" class="justify-self-center">
                   {%- render 'button', href: button_link, content: block.settings.link_text -%}
                 </div>
               {%- endif -%}
