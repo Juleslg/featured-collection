@@ -195,7 +195,7 @@
       "settings": {
         "container_size": "full",
         "top-margin-pdp": 1,
-        "product_info_size": 47,
+        "product_info_size": 40,
         "show_sticky_add_to_cart": false,
         "center_basic_info": false,
         "desktop_media_layout": "grid_2x",
