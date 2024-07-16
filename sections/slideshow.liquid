@@ -19,6 +19,11 @@ may have important consequence on the section itself.
               {%- capture loading_strategy -%}{% if forloop.first %}eager{% else %}lazy{% endif %}{%- endcapture -%}
               {%- capture fetch_priority -%}{% if forloop.first %}high{% else %}low{% endif %}{%- endcapture -%}
 
+
+                {%- if block.settings.image_link != blank -%}
+                  <a href="{{ block.settings.image_link }}">
+                {%- endif -%}
+
                 <picture>
                   {%- if block.settings.mobile_image != blank -%}
                     <source
@@ -29,15 +34,10 @@ may have important consequence on the section itself.
                     >
                   {%- endif -%}
                 
-                  {%- if block.settings.image_link != blank -%}
-                    <a href="{{ block.settings.image_link }}">
-                  {%- endif -%}
                   
                   {{- block.settings.image | image_url: width: block.settings.image.width | image_tag: loading: loading_strategy, fetchpriority: fetch_priority, sizes: '100vw', widths: '300,400,500,600,700,800,900,1000,1200,1400,1600,1800,2000,2200,2400,2600,2800,3000,3200' -}}
-                  
-                  {%- if block.settings.image_link != blank -%}
-                    </a>
-                  {%- endif -%}
+
+                
                 </picture>
             {%- else -%}
               {%- capture placeholder_image -%}{% cycle 'placeholder': 'lifestyle-1', 'lifestyle-2' %}{%- endcapture -%}
