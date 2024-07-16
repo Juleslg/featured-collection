@@ -90,6 +90,12 @@ may have important consequence on the section itself.
             <div class="prose">
               
               <style>
+
+                .slideshow__slide a {
+                  display: block;
+                  line-height: 0;
+                }
+
                 .custom-h1-font-size{{ section.id }} {
                   font-size: {{ block.settings.h1_custom_font_size }}rem !important;
                   margin-bottom: {{ block.settings.h1_custom_gap }}rem!important;
