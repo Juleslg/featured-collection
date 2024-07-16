@@ -32,18 +32,10 @@ may have important consequence on the section itself.
                       width="{{ block.settings.mobile_image.width }}"
                       height="{{ block.settings.mobile_image.height }}"
                     >
-<<<<<<< HEAD
-                    {%- endif -%}
-  
-                  {{- block.settings.image | image_url: width: block.settings.image.width | image_tag: loading: loading_strategy, fetchpriority: fetch_priority, sizes: '100vw', widths: '300,400,500,600,700,800,900,1000,1200,1400,1600,1800,2000,2200,2400,2600,2800,3000,3200', class: 'slideshow-image', -}}
-                  </picture>
-
-=======
                   {%- endif -%}
                 
                   
                   {{- block.settings.image | image_url: width: block.settings.image.width | image_tag: loading: loading_strategy, fetchpriority: fetch_priority, sizes: '100vw', widths: '300,400,500,600,700,800,900,1000,1200,1400,1600,1800,2000,2200,2400,2600,2800,3000,3200' -}}
->>>>>>> 374715a6f574e6f9a5f30cbf0ef65634f8a0bfce
 
                 
                 </picture>
