@@ -17,6 +17,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Head_webseite_Smaragdgruen_02.jpg",
             "mobile_image": "shopify:\/\/shop_images\/2024-04-09_Onomao8183.jpg",
+            "image_link": "",
             "subheading": "Unsere neue Glasur auf KLASSIK",
             "title": "neu | Geschirr in Smaragdgrün",
             "h1_custom_font": true,
@@ -185,6 +186,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/2023-08-30_Onomao3775.jpg",
             "mobile_image": "shopify:\/\/shop_images\/2023-08-30_Onomao3798.jpg",
+            "image_link": "shopify:\/\/collections\/becher-tassen",
             "subheading": "Zeitloses Geschirr in 11 Farben",
             "title": "Traditionell",
             "h1_custom_font": false,
@@ -316,6 +318,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/2021-08-31_Onomao4325.jpg",
             "mobile_image": "shopify:\/\/shop_images\/2021-08-31_Onomao4334_05fa2089-366c-4f20-a7ab-e8cbc2c6a0cd.jpg",
+            "image_link": "",
             "subheading": "und entdecke wie onomao-Keramik entsteht",
             "title": "Lerne unsere Produzent:Innen kennen",
             "h1_custom_font": true,
