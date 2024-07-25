@@ -6144,7 +6144,7 @@ tfoot td {
 
 @media screen and (min-width: 700px) {
   .product-sticky-bar {
-    inset-block: var(--sticky-area-height) auto;
+    /* inset-block: var(--sticky-area-height) auto; */
     background: rgb(var(--background-primary));
     border-block-end-width: 1px;
     grid-template-columns: minmax(0, 1fr) max-content;
